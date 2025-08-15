@@ -23,6 +23,13 @@ The part after the colon (:id) is the "argument" of the directive. Here, the ele
 
 Event Directives
 
+Modifiers -> available on event directives after attaching the event with dot notation, like preventing redirection in a hyperlink tag, like below
+```vue
+
+<a href="google.com" target="_blank" v-on:click="blockLeave()"> Go to google </a>
+<a href="google.com" target="_blank" v-on:click.prevent="blockLeave()"> Go to google </a>
+```
+
 
 ```vue
 v-on:[dynamic argument here]="method_name" or expression
